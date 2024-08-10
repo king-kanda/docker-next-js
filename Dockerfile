@@ -1,5 +1,5 @@
 # Use the official Node.js image as the base image
-FROM node:18-alpine
+FROM node:latest
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -20,4 +20,4 @@ RUN npm run build
 EXPOSE 3000
 
 # Define the command to start the application
-CMD ["npm", "start"]
+CMD ["npm", "start"] 
