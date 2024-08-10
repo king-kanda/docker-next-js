@@ -17,7 +17,7 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v6
       name: Build the website docker image
       with:
-        image: nexuswaveai/nexuswaveai_images
+        image: docker-test/okanda_docker
         tags: website
         registry: docker.io
         dockerfile: Dockerfile
